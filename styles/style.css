@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: solid red .5px; */
+}
+:root
+{
+    --rubik-font:'Rubik', sans-serif;
+    --tillana-cursive-font:'Tillana', cursive;
+    --yantramanav-font:'Yantramanav', sans-serif;
+    --bt-background:#112a5f;
+    --border-button:#188088;
+    --base-button:#2f2e81;
+}
+
+body{
+    background-color:#47014d ;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color:#ffffff;
+}
+
+.hero{
+    padding-top: 1em;
+    font-family: var(--tillana-cursive-font);
+    font-weight: 800;
+    font-size: 2em;
+    /* background-color: #002a77; */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.hero img{
+    height: 250px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    /* background-color: #65026e; */
+    max-width: 1124px;
+}
+.board{
+    width: 100%;
+    font-family: var(--tillana-cursive-font);
+    font-weight: 600;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    row-gap: 3em;
+    column-gap: .5em;
+    color:#ffffff;
+}
+
+.bt-cont{
+    border-radius: 10px;
+    justify-self: center;
+    height: 8em;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.button{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: #0e1957 -5px 1px 5px;
+    border: solid var(--border-button) 4px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bt-background);
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s;
+}
+.bt-cont{
+    background-color: var(--base-button);
+    border: solid var(--base-button) 8px;
+    box-shadow: #0e1957 -5px 5px 5px;
+}
+
+.button:hover{
+    background-color: #002a77;
+}
+
+.button:active{
+    border-radius: 20%;
+    transform: scale(.96);
+    background-color: #79beff;
+    border-color: #e4f4ff;
+    box-shadow: inset 0 0 .10em 0 #12deecff , 0 0 .6em 0 #12deecff;   
+    color: #0e1957;
+    transition: .1s;
+}
+
+
+@media (max-width:1024px){
+    .container{
+        width: 100%;
+        /* background-color: #65026e; */
+        max-width: 1124px;
+        padding: 0 1em;
+    }
+}
