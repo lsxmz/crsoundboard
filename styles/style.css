@@ -18,10 +18,12 @@ body{
     box-sizing: border-box;
 }
 
-header{
+header{    
+    background-color: #3d0342;
     display: flex;
     justify-content: center;
     color:#ffffff;
+    margin-bottom: 1em;    
 }
 
 .hero{
@@ -29,8 +31,7 @@ header{
     font-family: var(--tillana-cursive-font);
     font-weight: 800;
     font-size: 2em;
-    /* background-color: #002a77; */
-    height: 300px;
+    height: 280px;
     display: flex;
     justify-content: center;
     gap: 1.5em;
@@ -38,6 +39,7 @@ header{
 
 .hero img{
     height: 250px;
+    filter: drop-shadow(-5px 5px 5px #242424);
 }
 main{
     display: flex;
@@ -52,7 +54,7 @@ main{
     width: 100%;
     font-family: var(--tillana-cursive-font);
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.2em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     row-gap: 3em;
@@ -69,6 +71,9 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: var(--base-button);
+    border: solid var(--base-button) 8px;
+    box-shadow: #310015 -1px 2px 1px 2px;
 }
 
 .button{
@@ -76,7 +81,7 @@ main{
     height: 100%;
     width: 100%;
     border-radius: 20%;
-    box-shadow: #0e1957 -5px 1px 5px;
+    box-shadow: #0e1957 -2px 1px 2px 2px;
     border: solid var(--border-button) 4px;
     display: flex;
     align-items: center;
@@ -85,19 +90,14 @@ main{
     color: #ffffff;
     transition: .2s;
 }
-.bt-cont{
-    background-color: var(--base-button);
-    border: solid var(--base-button) 8px;
-    box-shadow: #0e1957 -5px 5px 5px;
-}
 
 .button:hover{
-    background-color: #002a77;
+    background-color: #003391;
 }
 
 .button:active{
     border-radius: 20%;
-    transform: scale(.96);
+    transform: scale(.95);
     background-color: #79beff;
     border-color: #e4f4ff;
     box-shadow: inset 0 0 .10em 0 #12deecff , 0 0 .6em 0 #12deecff;   
@@ -112,5 +112,21 @@ main{
         /* background-color: #65026e; */
         max-width: 1124px;
         padding: 0 1em;
+    }
+    
+    header{
+        margin-bottom: 2em;
+    }
+    .hero{
+        padding: 2em 0;
+        font-size: 1em;
+        text-align: center;
+        flex-direction:column;
+        align-items: center;
+    }
+    .hero img{
+        height: auto;
+        width: 200px;
+        filter: drop-shadow(-5px 5px 5px #242424);
     }
 }
