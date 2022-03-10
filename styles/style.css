@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
     margin: 0px;
@@ -5,9 +6,7 @@
 }
 :root
 {
-    --rubik-font:'Rubik', sans-serif;
-    --tillana-cursive-font:'Tillana', cursive;
-    --yantramanav-font:'Yantramanav', sans-serif;
+    --tillana-cursive-font:'Tillana',cursive;
     --bt-background:#112a5f;
     --border-button:#188088;
     --base-button:#2f2e81;
@@ -29,7 +28,6 @@ header{
 .hero{
     padding-top: 1em;
     font-family: var(--tillana-cursive-font);
-    font-weight: 800;
     font-size: 2em;
     height: 280px;
     display: flex;
@@ -43,18 +41,18 @@ header{
 }
 main{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    font-family: var(--tillana-cursive-font);
+    font-weight: 600;
+    font-size: 1em;
 }
 .container{
     width: 100%;
     /* background-color: #65026e; */
     max-width: 1124px;
 }
-.board{
+.board-content{
     width: 100%;
-    font-family: var(--tillana-cursive-font);
-    font-weight: 600;
-    font-size: 1.2em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     row-gap: 3em;
@@ -65,6 +63,7 @@ main{
 .bt-cont{
     border-radius: 10px;
     justify-self: center;
+    border-radius: 50%;
     height: 8em;
     width: 8em;
     display: flex;
@@ -76,27 +75,29 @@ main{
     box-shadow: #310015 -1px 2px 1px 2px;
 }
 
-.button{
-    box-sizing: border-box;
+.button-sound{
+    font-family: var(--tillana-cursive-font);
+    font-weight: 400;
+    font-size: 1.3em;
     height: 100%;
     width: 100%;
-    border-radius: 20%;
+    border-radius: 50%;
     box-shadow: #0e1957 -2px 1px 2px 2px;
     border: solid var(--border-button) 4px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--bt-background);
-    text-decoration: none;
     color: #ffffff;
     transition: .2s;
 }
 
-.button:hover{
+.button-sound:hover{
     background-color: #003391;
 }
 
-.button:active{
-    border-radius: 20%;
+.button-sound:active{
+    border-radius: 50%;
     transform: scale(.95);
     background-color: #79beff;
     border-color: #e4f4ff;
