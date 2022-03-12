@@ -1,7 +1,19 @@
 //reviewing code?
 //Unos pokemons vuelan pero yo puedo CA MI NAR
 const boardContent= document.querySelector(".board-content")
+// const infoDisplay=document.querySelector(".info");
+// const modalInfo=document.querySelector(".modal-info")
 let audioplay=null
+// let showInfo=false
+
+// infoDisplay.addEventListener("mouseover",()=>{
+//     modalInfo.classList.add("modal-show")
+
+// })
+// infoDisplay.addEventListener("mouseleave",()=>{
+//     modalInfo.classList.remove("modal-show")
+// })
+
 
 fetch("./js/data.js")
 .then(response=>{

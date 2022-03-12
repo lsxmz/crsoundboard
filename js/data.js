@@ -76,8 +76,8 @@
             "soundPath":"sounds/calladito-tonto.mp3"
         },{
             "id":"crsd-19",
-            "text":"Abuga",
-            "soundPath":"sounds/abuga.mp3"
+            "text":"No sé soy ninier, cómo lo supiste",
+            "soundPath":"sounds/soy-ninier.mp3"
         },{
             "id":"crsd-20",
             "text":"Ahhhh",
@@ -162,6 +162,14 @@
             "id":"crsd-40",
             "text":"Para ya",
             "soundPath":"sounds/para-ya.mp3"
+        },{
+            "id":"crsd-41",
+            "text":"Pos bien",
+            "soundPath":"sounds/pos-bien.mp3"
+        },{
+            "id":"crsd-42",
+            "text":"Abuga",
+            "soundPath":"sounds/abuga.mp3"
         }
     ]
 
