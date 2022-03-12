@@ -1,3 +1,5 @@
+//reviewing code?
+//Unos pokemons vuelan pero yo puedo CA MI NAR
 const boardContent= document.querySelector(".board-content")
 let audioplay=null
 
@@ -12,22 +14,27 @@ fetch("./js/data.js")
 
 function createBoardContent(soundsData){
     for(let ind=0;ind<soundsData.length;ind++){
-        let divElement=document.createElement("div")
-        let buttonElement=document.createElement("button")
-        let buttonText=document.createTextNode(soundsData[ind].text)
-
-        divElement.classList.add("bt-cont")
-        buttonElement.classList.add("button-sound")
-        buttonElement.appendChild(buttonText)
-        buttonElement.setAttribute("id",`${soundsData[ind].id}`)
-        buttonElement.type="button"
-        divElement.appendChild(buttonElement)
-        boardContent.appendChild(divElement)
+        boardContent.appendChild(createButton(soundsData[ind]))
     }
 }
 
+function createButton(soundInfo){
+    let divElement=document.createElement("div")
+    let buttonElement=document.createElement("button")
+    let buttonText=document.createTextNode(soundInfo.text)
+
+    divElement.classList.add("bt-cont")
+    buttonElement.classList.add("button-sound")
+    buttonElement.appendChild(buttonText)
+    buttonElement.setAttribute("id",`${soundInfo.id}`)
+    buttonElement.type="button"
+    divElement.appendChild(buttonElement)
+
+    return divElement
+}
+
 function EventButton(event,soundsData){
-        if(audioplay){ //check if sound is currently playing and stop it
+        if(audioplay){ //check if a sound is currently playing
             audioplay.pause()
         }
 
