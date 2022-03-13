@@ -5,19 +5,18 @@
             "id":"crsd-1",
             "text":"Entonces le dije",
             "soundPath":"sounds/entonces-le-dije.mp3"
-        },
-        {
+        },        {
             "id":"crsd-2",
             "text":"Cállate",
-            "soundPath":"sounds/callate.mp3"
+            "soundPath":"sounds/callate3.mp3"
         },{
             "id":"crsd-3",
             "text":"No estoy loca...",
             "soundPath":"sounds/no-estoy-loca.mp3"
         },{
             "id":"crsd-4",
-            "text":"Qué ha pasa'o",
-            "soundPath":"sounds/que-a-pasao.mp3"
+            "text":"Y no paran, no paran...",
+            "soundPath":"sounds/no-paran.mp3"
         },{
             "id":"crsd-5",
             "text":"Bieeen",
@@ -60,8 +59,8 @@
             "soundPath":"sounds/you-know-what-i-mean.mp3"
         },{
             "id":"crsd-15",
-            "text":"Perdón",
-            "soundPath":"sounds/perdon.mp3"
+            "text":"No tienes ni puta idea...",
+            "soundPath":"sounds/no-tienes-puta-idea.mp3"
         },{
             "id":"crsd-16",
             "text":"Me cago en tus muertos",
@@ -80,20 +79,20 @@
             "soundPath":"sounds/soy-ninier.mp3"
         },{
             "id":"crsd-20",
-            "text":"Ahhhh",
-            "soundPath":"sounds/aaaa-1.mp3"
+            "text":"...genial si te lo hubiese preguntado",
+            "soundPath":"sounds/si-te-lo-hubiese-preguntado.mp3"
         },{
             "id":"crsd-21",
             "text":"En un futuro muy futuro",
             "soundPath":"sounds/en-un-futuro-muy-futuro.mp3"
         },{
             "id":"crsd-22",
-            "text":"lulululu",
-            "soundPath":"sounds/lulululu.mp3"
+            "text":"Este juego es una mierda",
+            "soundPath":"sounds/este-juego-es-una-mierda.mp3"
         },{
             "id":"crsd-23",
-            "text":"Cuídate",
-            "soundPath":"sounds/cuidate.mp3"
+            "text":"Nada más que decir",
+            "soundPath":"sounds/nada-mas-que-decir.mp3"
         },{
             "id":"crsd-24",
             "text":"Coño",
@@ -108,16 +107,16 @@
             "soundPath":"sounds/lets-go.mp3"
         },{
             "id":"crsd-27",
-            "text":"Sabes",
-            "soundPath":"sounds/sabes.mp3"
+            "text":"Qué ha pasa'o",
+            "soundPath":"sounds/que-a-pasao.mp3"
         },{
             "id":"crsd-28",
-            "text":"Perfecto",
-            "soundPath":"sounds/perfecto.mp3"
+            "text":"Me acaban de citar 40 nonames",
+            "soundPath":"sounds/me-acaban-de-citar-nonames.mp3"
         },{
             "id":"crsd-29",
-            "text":"Holaaaa",
-            "soundPath":"sounds/holaaaa.mp3"
+            "text":"Me fumo 4 porros",
+            "soundPath":"sounds/fumo-porros.mp3"
         },{
             "id":"crsd-30",
             "text":"No pasa nada",
@@ -136,8 +135,8 @@
             "soundPath":"sounds/no-vas-a-ganar.mp3"
         },{
             "id":"crsd-34",
-            "text":"Gracias nena",
-            "soundPath":"sounds/gracias-nena.mp3"
+            "text":"Bueno vamo a juga",
+            "soundPath":"sounds/bueno-vamo-a-jugar.mp3"
         },{
             "id":"crsd-35",
             "text":"Qué es eso",
@@ -148,8 +147,8 @@
             "soundPath":"sounds/no-me-da-la-gana.mp3"
         },{
             "id":"crsd-37",
-            "text":"Vale",
-            "soundPath":"sounds/vale.mp3"
+            "text":"El queso lo abro yo tontitos",
+            "soundPath":"sounds/queso-lo-abro-yo.mp3"
         },{
             "id":"crsd-38",
             "text":"Stop It",
@@ -164,12 +163,60 @@
             "soundPath":"sounds/para-ya.mp3"
         },{
             "id":"crsd-41",
-            "text":"Pos bien",
+            "text":"Pues bien",
             "soundPath":"sounds/pos-bien.mp3"
         },{
             "id":"crsd-42",
             "text":"Abuga",
             "soundPath":"sounds/abuga.mp3"
+        },{
+            "id":"crsd-43",
+            "text":"Ahhhh",
+            "soundPath":"sounds/aaaa-1.mp3"
+        },{
+            "id":"crsd-44",
+            "text":"¿Habéis escuchado eso?",
+            "soundPath":"sounds/habeis-escuchado-eso.mp3"
+        },{
+            "id":"crsd-45",
+            "text":"¡Las sábanas!",
+            "soundPath":"sounds/las-sabanas.mp3"
+        },{
+            "id":"crsd-46",
+            "text":"lulululu",
+            "soundPath":"sounds/lulululu.mp3"
+        },{
+            "id":"crsd-47",
+            "text":"Puedo jugar algo",
+            "soundPath":"sounds/puedo-jugar-algo.mp3"
+        },{
+            "id":"crsd-48",
+            "text":"Perdón",
+            "soundPath":"sounds/perdon.mp3"
+        },{
+            "id":"crsd-49",
+            "text":"Cuídate",
+            "soundPath":"sounds/cuidate.mp3"
+        },{
+            "id":"crsd-50",
+            "text":"Sabes",
+            "soundPath":"sounds/sabes.mp3"
+        },{
+            "id":"crsd-51",
+            "text":"Gracias nena",
+            "soundPath":"sounds/gracias-nena.mp3"
+        },{
+            "id":"crsd-52",
+            "text":"Perfecto",
+            "soundPath":"sounds/perfecto.mp3"
+        },{
+            "id":"crsd-53",
+            "text":"Holaaaa",
+            "soundPath":"sounds/holaaaa.mp3"
+        },{
+            "id":"crsd-54",
+            "text":"Vale",
+            "soundPath":"sounds/vale.mp3"
         }
     ]
 
