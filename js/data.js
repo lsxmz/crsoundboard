@@ -2,6 +2,11 @@
     "version":"1.0",
     "sounds":[
         {
+            "id":"crsd-0",
+            "text":"Soy Cristinini",
+            "soundPath":"sounds/soy-cristinini.mp3"
+        }, 
+        {
             "id":"crsd-1",
             "text":"Entonces le dije",
             "soundPath":"sounds/entonces-le-dije.mp3"
@@ -217,6 +222,18 @@
             "id":"crsd-54",
             "text":"Vale",
             "soundPath":"sounds/vale.mp3"
+        },{
+            "id":"crsd-55",
+            "text":"Ratatatata",
+            "soundPath":"sounds/ratatatata.mp3"
+        },{
+            "id":"crsd-56",
+            "text":"...bocadillo de atún",
+            "soundPath":"sounds/pim-pam-pum.mp3"
+        },{
+            "id":"crsd-57",
+            "text":"Me la suda",
+            "soundPath":"sounds/me-la-suda.mp3"
         }
     ]
 

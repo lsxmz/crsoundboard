@@ -33,14 +33,90 @@ header{
     justify-content: center;
     align-items: center;
     gap: 1.5em;
+    transition: .1s;
     /* border: solid red 1px; */
 }
+.color-sounds{
+    background: linear-gradient(#3d0342,#000000,#ff0000,#000000,#0049e6,#000000,#ffffff,#3d0342);
+    background-size: 600vw 1500vh;
+    animation-duration: 6s;
+    animation-name: color-sounds;
+}
+
+@keyframes color-sounds{
+    0%{
+        background-position-y: 0%;
+    }2%{
+
+        background-position-y: 8%;
+    }
+    8%{
+        background-position-y: 8%;
+    }20%{
+/* black */
+        background-position-y: 42.5%;
+    }30%{
+        background-position-y: 42.5%;
+    }38%{
+        /* black pass blue*/
+        background-position-y: 72%;
+    }42%{
+        /* black pass blue*/
+        background-position-y: 72%;
+    }45%{
+        background-position-y: 90%;
+    }50%{
+        background-position-y: 90%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+}
+/* @keyframes color-sounds{
+    0%{
+        background-position-y: 0%;
+    }2%{
+
+        background-position-y: 8%;
+    }10%{
+
+        background-position-y: 8%;
+    }15%{
+
+        background-position-y: 22%;
+    }35%{
+
+        background-position-y: 42.5%;
+    }55%{
+
+        background-position-y: 48%;
+    }80%{
+
+        background-position-y: 74%;
+    }60%{
+
+        background-position-y: 80%;
+    }75%{
+
+        background-position-y: 90%;
+    }95%{
+
+        background-position-y: 950%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+} */
 
 .hero img{
     height: 250px;
     filter: drop-shadow(-5px 5px 5px #242424);
 }
-
+.logo-bt:hover{
+    cursor: pointer;
+    transition: .05s;
+    transform: scale(1.1);
+}
 .info{
     padding: .5em;
     position: absolute;
@@ -155,6 +231,14 @@ footer p:nth-of-type(2){
 }
 footer a{
     color: #cca3c2;
+    text-decoration: none;
+}
+.modal-info a{
+    color: #007281;
+    text-decoration: none;
+}
+.modal-info a:hover{
+    color: #00d6a1;
     text-decoration: none;
 }
 footer a:hover{
