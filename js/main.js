@@ -6,11 +6,12 @@ const modalInfo=document.querySelector(".modal-info")
 const logoBt=document.querySelector(".logo-bt")
 const heroEffect=document.querySelector("header")
 let audioplay=null
-let showInfo=false
 
+//play audio,start and stop animation in hero header
 function heroSound(data){
     isAudioPlaying()
     heroEffect.classList.remove("color-sounds")
+    void heroEffect.offsetHeight
     heroEffect.classList.add("color-sounds")
     let soundPath=`${data[0].soundPath}`
     playSound(soundPath)
@@ -48,7 +49,9 @@ fetch("./js/data.js")
 
 function createBoardContent(soundsData){
     for(let ind=0;ind<soundsData.length;ind++){
-        boardContent.appendChild(createButton(soundsData[ind]))
+        if(soundsData[ind].id!="crsd-0"){
+            boardContent.appendChild(createButton(soundsData[ind]))
+        }
     }
 }
 

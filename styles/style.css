@@ -2,7 +2,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    /* border: solid red .5px; */
 }
 :root
 {
@@ -10,6 +9,7 @@
     --bt-background:#112a5f;
     --border-button:#188088;
     --base-button:#2f2e81;
+    --bt-border-radius:10%;
 }
 
 body{
@@ -17,13 +17,21 @@ body{
     box-sizing: border-box;
 }
 
-header{    
-    background-color: #3d0342;
+header{
+    position: relative;
+    background-color: #38023b;
     display: flex;
     justify-content: center;
     color:#ffffff; 
 }
-
+.over{
+    /* opacity: 100%; */
+    position: absolute;
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
 .hero{
     padding: 1em 0;
     font-family: var(--tillana-cursive-font);
@@ -38,7 +46,7 @@ header{
 }
 .color-sounds{
     background: linear-gradient(#3d0342,#000000,#ff0000,#000000,#0049e6,#000000,#ffffff,#3d0342);
-    background-size: 600vw 1500vh;
+    background-size: 600vw 3000vh;
     animation-duration: 6s;
     animation-name: color-sounds;
 }
@@ -53,15 +61,14 @@ header{
     8%{
         background-position-y: 8%;
     }20%{
-/* black */
+        /* black to red */
         background-position-y: 42.5%;
     }30%{
         background-position-y: 42.5%;
     }38%{
-        /* black pass blue*/
+        /* red to blue */
         background-position-y: 72%;
     }42%{
-        /* black pass blue*/
         background-position-y: 72%;
     }45%{
         background-position-y: 90%;
@@ -69,53 +76,19 @@ header{
         background-position-y: 90%;
     }
     100%{
-        background-position-y: 100%;
+        background-position-y: 102%;
     }
 }
-/* @keyframes color-sounds{
-    0%{
-        background-position-y: 0%;
-    }2%{
 
-        background-position-y: 8%;
-    }10%{
-
-        background-position-y: 8%;
-    }15%{
-
-        background-position-y: 22%;
-    }35%{
-
-        background-position-y: 42.5%;
-    }55%{
-
-        background-position-y: 48%;
-    }80%{
-
-        background-position-y: 74%;
-    }60%{
-
-        background-position-y: 80%;
-    }75%{
-
-        background-position-y: 90%;
-    }95%{
-
-        background-position-y: 950%;
-    }
-    100%{
-        background-position-y: 100%;
-    }
-} */
-
-.hero img{
+.logo-bt{
     height: 250px;
     filter: drop-shadow(-5px 5px 5px #242424);
+    transition: .05s;
 }
 .logo-bt:hover{
     cursor: pointer;
     transition: .05s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .info{
     padding: .5em;
@@ -170,7 +143,7 @@ main{
 .bt-cont{
     border-radius: 10px;
     justify-self: center;
-    border-radius: 50%;
+    border-radius: var(--bt-border-radius);
     height: 8em;
     width: 8em;
     display: flex;
@@ -188,7 +161,7 @@ main{
     font-size: 1.3em;
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: var(--bt-border-radius);
     box-shadow: #0e1957 -2px 1px 2px 2px;
     border: solid var(--border-button) 4px;
     display: flex;
@@ -204,7 +177,7 @@ main{
 }
 
 .button-sound:active{
-    border-radius: 50%;
+    border-radius: var(--bt-border-radius);
     transform: scale(.95);
     background-color: #79beff;
     border-color: #e4f4ff;

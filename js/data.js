@@ -88,8 +88,8 @@
             "soundPath":"sounds/si-te-lo-hubiese-preguntado.mp3"
         },{
             "id":"crsd-21",
-            "text":"En un futuro muy futuro",
-            "soundPath":"sounds/en-un-futuro-muy-futuro.mp3"
+            "text":"CÓMOOOO?",
+            "soundPath":"sounds/comoooo.mp3"
         },{
             "id":"crsd-22",
             "text":"Este juego es una mierda",
@@ -112,8 +112,8 @@
             "soundPath":"sounds/lets-go.mp3"
         },{
             "id":"crsd-27",
-            "text":"Qué ha pasa'o",
-            "soundPath":"sounds/que-a-pasao.mp3"
+            "text":"A la puta Calle",
+            "soundPath":"sounds/a-la-calle.mp3"
         },{
             "id":"crsd-28",
             "text":"Me acaban de citar 40 nonames",
@@ -176,8 +176,8 @@
             "soundPath":"sounds/abuga.mp3"
         },{
             "id":"crsd-43",
-            "text":"Ahhhh",
-            "soundPath":"sounds/aaaa-1.mp3"
+            "text":"¿Qué rol?",
+            "soundPath":"sounds/que-rol.mp3"
         },{
             "id":"crsd-44",
             "text":"¿Habéis escuchado eso?",
@@ -234,6 +234,26 @@
             "id":"crsd-57",
             "text":"Me la suda",
             "soundPath":"sounds/me-la-suda.mp3"
+        },{
+            "id":"crsd-58",
+            "text":"La S word NO",
+            "soundPath":"sounds/s-word-no.mp3"
+        },{
+            "id":"crsd-59",
+            "text":"En un futuro muy futuro",
+            "soundPath":"sounds/en-un-futuro-muy-futuro.mp3"
+        },{
+            "id":"crsd-60",
+            "text":"Qué ha pasa'o",
+            "soundPath":"sounds/que-a-pasao.mp3"
+        },{
+            "id":"crsd-61",
+            "text":"Muchas gracias guapetón",
+            "soundPath":"sounds/muchas-gracias-guapeton.mp3"
+        },{
+            "id":"crsd-62",
+            "text":"Ahhhh",
+            "soundPath":"sounds/aaaa-1.mp3"
         }
     ]
 
