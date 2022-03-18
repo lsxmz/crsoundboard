@@ -254,6 +254,10 @@
             "id":"crsd-62",
             "text":"Ahhhh",
             "soundPath":"sounds/aaaa-1.mp3"
+        },{
+            "id":"crsd-63",
+            "text":"Estoy hasta la polla",
+            "soundPath":"sounds/hasta-la-polla.mp3"
         }
     ]
 
