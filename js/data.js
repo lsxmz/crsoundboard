@@ -88,7 +88,7 @@
             "soundPath":"sounds/si-te-lo-hubiese-preguntado.mp3"
         },{
             "id":"crsd-21",
-            "text":"CÓMOOOO?",
+            "text":"¿CÓMOOOO?",
             "soundPath":"sounds/comoooo.mp3"
         },{
             "id":"crsd-22",
@@ -116,8 +116,8 @@
             "soundPath":"sounds/a-la-calle.mp3"
         },{
             "id":"crsd-28",
-            "text":"Me acaban de citar 40 nonames",
-            "soundPath":"sounds/me-acaban-de-citar-nonames.mp3"
+            "text":"Viva España",
+            "soundPath":"sounds/viva-espana.mp3"
         },{
             "id":"crsd-29",
             "text":"Me fumo 4 porros",
@@ -258,6 +258,14 @@
             "id":"crsd-63",
             "text":"Estoy hasta la polla",
             "soundPath":"sounds/hasta-la-polla.mp3"
+        },{
+            "id":"crsd-64",
+            "text":"Me acaban de citar 40 nonames",
+            "soundPath":"sounds/me-acaban-de-citar-nonames.mp3"
+        },{
+            "id":"crsd-65",
+            "text":"Saludos a Tik Tok",
+            "soundPath":"sounds/saludos-a-tiktok.mp3"
         }
     ]
 
