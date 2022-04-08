@@ -12,7 +12,7 @@
     --bt-border-radius:10%;
 }
 
-body{
+body{   
     background-color:#47014d ;
     box-sizing: border-box;
 }
@@ -25,7 +25,6 @@ header{
     color:#ffffff; 
 }
 .over{
-    /* opacity: 100%; */
     position: absolute;
     z-index: 6;
     height: 100%;
@@ -42,7 +41,6 @@ header{
     align-items: center;
     gap: 1.5em;
     transition: .1s;
-    /* border: solid red 1px; */
 }
 .color-sounds{
     background: linear-gradient(#3d0342,#000000,#ff0000,#000000,#0049e6,#000000,#ffffff,#3d0342);
@@ -117,29 +115,52 @@ header{
 .modal-show{
     display: block;
 }
+
 main{
-    display: flex;
-    justify-content: center;    
-    font-family: var(--tillana-cursive-font);
-    font-weight: 600;
-    font-size: 1em;        
-    margin-top: 1em; 
-    margin-bottom: 1em;   
+ width: 100%;
 }
+
 .container{
     width: 100%;
     position: relative;
     max-width: 1124px;
 }
-.board-content{
+
+.board{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--tillana-cursive-font);
+    font-weight: 600;
+    font-size: 1em;    
+}
+ .board-content{
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     row-gap: 3em;
     column-gap: .5em;
     color:#ffffff;
+    padding-top: 3em; 
+    padding-bottom: 1em;  
+} 
+.load{
+    display: block;
+    padding: 2em 0;
+    background: url("../img/load.gif") no-repeat center;
+    background-size: 100px;
+    width: 100%;
+    height: 100px;
 }
-
+.main p{
+    padding: .5em;
+    text-align: center;
+    color:#ffffff;
+    font-size: 3rem;
+} 
 .bt-cont{
     border-radius: 10px;
     justify-self: center;
@@ -186,6 +207,7 @@ main{
     transition: .1s;
 }
 
+
 footer{
     background-color: #3d0342;
     display: flex;
@@ -221,13 +243,8 @@ footer a:hover{
 @media (max-width:768px){
     .container{
         width: 100%;
-        /* background-color: #65026e; */
         max-width: 1124px;
         padding: 0 1em;
-    }
-    
-    header{
-        margin-bottom: 2em;
     }
     .hero{
         padding: 2em 0;

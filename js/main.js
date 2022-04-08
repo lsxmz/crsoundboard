@@ -15,12 +15,13 @@
 ⣭⣙⡒⠦⠭⣭⣛⣛⣛⡻⠿⠿⠟⣛⣛⣛⣛⡋⣶⡜⣟⣸⣠⡿⣸⠇⣧⡀⠄⠄
 ⣿⣿⣿⣿⣷⣶⣦⣭⣭⣭⣭⣭⣭⣥⣶⣶⣶⡆⣿⣾⣿⣿⣿⣷⣿⣸⠉⣷⠄⠄*/
 
-const boardContent= document.querySelector(".board-content")
-const infoDisplay=document.querySelector(".info");
-const modalInfo=document.querySelector(".modal-info")
-const logoBt=document.querySelector(".logo-bt")
-const heroEffect=document.querySelector("header")
-let audioplay=null
+const boardContent = document.querySelector(".board-content")
+const infoDisplay = document.querySelector(".info");
+const modalInfo = document.querySelector(".modal-info")
+const logoBt = document.querySelector(".logo-bt")
+const load = document.querySelector(".load")
+const heroEffect = document.querySelector("header")
+let audioplay = null
 
 //play audio,start and stop animation in hero header
 function heroSound(data){
@@ -60,6 +61,7 @@ fetch("./js/data.js")
     createBoardContent(data.sounds)
     boardContent.addEventListener("click",function(e){EventButton(e,data.sounds)},false)
     logoBt.addEventListener("click",function(){heroSound(data.sounds)},false)
+    load.style.display="none"
 })
 
 function createBoardContent(soundsData){
@@ -68,6 +70,16 @@ function createBoardContent(soundsData){
             boardContent.appendChild(createButton(soundsData[ind]))
         }
     }
+}
+
+function addLoading(){    
+    let ploading=document.createElement("p")
+    let textLoading=document.createTextNode("Cargando...")
+    ploading.appendChild(textLoading)
+    ploading.classList.
+    divloading.appendChild("Carcan")
+    mainDiv.createElement("p")
+    mainDiv.appendChild("Cargando...")
 }
 
 function createButton(soundInfo){
