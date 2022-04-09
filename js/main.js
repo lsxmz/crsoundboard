@@ -26,12 +26,11 @@ let audioplay = null
 //play audio,start and stop animation in hero header
 function heroSound(data){
     isAudioPlaying()
+    let soundPath=`${data[0].soundPath}`
+    playSound(soundPath)
     heroEffect.classList.remove("color-sounds")
     void heroEffect.offsetHeight
     heroEffect.classList.add("color-sounds")
-    let soundPath=`${data[0].soundPath}`
-    playSound(soundPath)
-
 }
 
 
