@@ -16,7 +16,10 @@ body{
     background-color:#47014d ;
     box-sizing: border-box;
 }
-
+.previmg{
+    position: absolute;
+    z-index: -1;
+}
 header{
     position: relative;
     background-color: #38023b;
