@@ -22,6 +22,7 @@ const logoBt = document.querySelector(".logo-bt")
 const load = document.querySelector(".load")
 const heroEffect = document.querySelector("header")
 let audioplay = null
+let downloadBtLast=""
 
 //play audio,start and stop animation in hero header
 function heroSound(data){
@@ -61,7 +62,9 @@ fetch("./js/data.js")
     boardContent.addEventListener("click",function(e){EventButton(e,data.sounds)},false)
     logoBt.addEventListener("click",function(){heroSound(data.sounds)},false)
     load.style.display="none"
-})
+}).catch(function(error) {
+    console.log('Hubo un problema con la petición :(' + error.message);
+  });
 
 function createBoardContent(soundsData){
     for(let ind=0;ind<soundsData.length;ind++){
@@ -72,6 +75,7 @@ function createBoardContent(soundsData){
 }
 
 function createButton(soundInfo){
+    let downloadbt=createDownloadBt(soundInfo)
     let divElement=document.createElement("div")
     let buttonElement=document.createElement("button")
     let buttonText=document.createTextNode(soundInfo.text)
@@ -81,19 +85,44 @@ function createButton(soundInfo){
     buttonElement.appendChild(buttonText)
     buttonElement.setAttribute("id",`${soundInfo.id}`)
     buttonElement.type="button"
+    divElement.appendChild(downloadbt)
     divElement.appendChild(buttonElement)
-
     return divElement
 }
 
-function EventButton(event,soundsData){
-    isAudioPlaying()
+function createDownloadBt(soundInfo){
+    let atag=document.createElement("a")
+    atag.setAttribute("id",`${soundInfo.id}-hov`)
+    atag.setAttribute("download","")
+    atag.setAttribute("href",soundInfo.soundPath)
+    atag.classList.add("downl")
+    return atag
+}
 
-    let soundsFilter=soundsData.filter(sound=>sound.id==event.target.id)
-    if(soundsFilter.length > 0){
-        let soundPath=`${soundsFilter[0].soundPath}`
-        playSound(soundPath)
-    }
+function EventButton(event,soundsData){
+    let elementValidate=document.getElementById(event.target.id)
+
+   if(elementValidate){    
+    isAudioPlaying() 
+    let validateDownlBt=event.target.id.substring(event.target.id.length-4,event.target.id.length)
+        if(validateDownlBt!="-hov"){
+            if(downloadBtLast==""){
+                downloadBtLast=`${event.target.id}-hov`
+                document.getElementById(downloadBtLast).style.display="block"
+            }else{
+                downloadBtActual=`${event.target.id}-hov`
+                document.getElementById(downloadBtLast).style.display="none"
+                document.getElementById(downloadBtActual).style.display="block"            
+                downloadBtLast=`${event.target.id}-hov`
+            }
+            let soundsFilter=soundsData.filter(sound=>sound.id==event.target.id)
+
+            if(soundsFilter.length > 0){
+                let soundPath=`${soundsFilter[0].soundPath}`
+                playSound(soundPath)
+            }
+        }
+   }
 }
 
 function isAudioPlaying(){

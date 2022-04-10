@@ -169,6 +169,7 @@ main{
     font-size: 3rem;
 } 
 .bt-cont{
+    position: relative;
     border-radius: 10px;
     justify-self: center;
     border-radius: var(--bt-border-radius);
@@ -181,6 +182,17 @@ main{
     background-color: var(--base-button);
     border: solid var(--base-button) 8px;
     box-shadow: #310015 -1px 2px 1px 2px;
+}
+
+.downl{
+    display: none;
+    background-color: red;
+    background:url("../img/download.png") no-repeat center ;
+    background-size: 35px;
+    position: absolute;
+    top: -55px;
+    width: 50px;
+    height: 50px;
 }
 
 .button-sound{
