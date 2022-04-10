@@ -1,4 +1,3 @@
-
 *{
     padding: 0px;
     margin: 0px;
@@ -6,26 +5,31 @@
 :root
 {
     --tillana-cursive-font:'Tillana',cursive;
+    --white:#ffffff;    
+    --dark-blue:#0e1957;
+    --dark-purple:#38023b;
+    --soft-purple:#47014d;
     --bt-background:#112a5f;
     --border-button:#188088;
     --base-button:#2f2e81;
     --bt-border-radius:10%;
+    --bt-active-background:#79beff;
+    --bt-active-border:#e4f4ff;
+    --bt-active-outer:#12deecff;
+    --gray:#242424;
 }
 
 body{   
-    background-color:#47014d ;
+    background-color:var(--soft-purple) ;
     box-sizing: border-box;
 }
-.previmg{
-    position: absolute;
-    z-index: -1;
-}
+
 header{
     position: relative;
-    background-color: #38023b;
+    background-color: var(--dark-purple);
     display: flex;
     justify-content: center;
-    color:#ffffff; 
+    color:var(--white); 
 }
 .over{
     position: absolute;
@@ -83,7 +87,7 @@ header{
 
 .logo-bt{
     height: 250px;
-    filter: drop-shadow(-5px 5px 5px #242424);
+    filter: drop-shadow(-5px 5px 5px var(--gray));
     transition: .05s;
 }
 .logo-bt:hover{
@@ -105,7 +109,7 @@ header{
 }
 .modal-info{
     display: none;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 2em 1em;
     border-radius: 15px 0 15px 15px;
     color:var(--base-button);
@@ -146,7 +150,7 @@ main{
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     row-gap: 3em;
     column-gap: .5em;
-    color:#ffffff;
+    color:var(--white);
     padding-top: 3em; 
     padding-bottom: 1em;  
 } 
@@ -161,7 +165,7 @@ main{
 .main p{
     padding: .5em;
     text-align: center;
-    color:#ffffff;
+    color:var(--white);
     font-size: 3rem;
 } 
 .bt-cont{
@@ -186,13 +190,13 @@ main{
     height: 100%;
     width: 100%;
     border-radius: var(--bt-border-radius);
-    box-shadow: #0e1957 -2px 1px 2px 2px;
+    box-shadow: var( --dark-blue) -2px 1px 2px 2px;
     border: solid var(--border-button) 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bt-background);
-    color: #ffffff;
+    color: var(--white);
     transition: .2s;
 }
 
@@ -203,34 +207,13 @@ main{
 .button-sound:active{
     border-radius: var(--bt-border-radius);
     transform: scale(.95);
-    background-color: #79beff;
-    border-color: #e4f4ff;
-    box-shadow: inset 0 0 .10em 0 #12deecff , 0 0 .6em 0 #12deecff;   
-    color: #0e1957;
+    background-color: var(--bt-active-background);
+    border-color: var(--bt-active-border);
+    box-shadow: inset 0 0 .10em 0 var(--bt-active-outer) , 0 0 .6em 0 var(--bt-active-outer);   
+    color: var(--dark-blue);
     transition: .1s;
 }
 
-
-footer{
-    background-color: #3d0342;
-    display: flex;
-    justify-content: center;
-    padding: 1em 0;
-    width: 100%;
-    text-align: center;
-    line-height: .7em;
-    color: #ffffff;
-    height: 100%;
-    font-family: var(--tillana-cursive-font);
-    font-size: 1.2rem;
-}
-footer p:nth-of-type(2){
-    font-size: .7rem;
-}
-footer a{
-    color: #cca3c2;
-    text-decoration: none;
-}
 .modal-info a{
     color: #007281;
     text-decoration: none;
@@ -238,9 +221,6 @@ footer a{
 .modal-info a:hover{
     color: #00d6a1;
     text-decoration: none;
-}
-footer a:hover{
-    color: #dcdf3c;
 }
 
 @media (max-width:768px){
@@ -259,7 +239,7 @@ footer a:hover{
     .hero img{
         height: auto;
         width: 200px;
-        filter: drop-shadow(-5px 5px 5px #242424);
+        filter: drop-shadow(-5px 5px 5px var(--gray));
     }
     .board-content{
         width: 100%;
@@ -267,7 +247,7 @@ footer a:hover{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         row-gap: 3em;
         column-gap: 1.6em;
-        color:#ffffff;
+        color:var(--white);
     }
     .bt-cont{
         height: 6.5em;

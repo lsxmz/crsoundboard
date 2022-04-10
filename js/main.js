@@ -33,7 +33,7 @@ function heroSound(data){
     heroEffect.classList.add("color-sounds")
 }
 
-
+//modal interaction
 infoDisplay.addEventListener("mouseover",()=>{    
     modalInfo.classList.add("modal-show")
     infoDisplay.setAttribute("style","opacity:100%")
@@ -71,16 +71,6 @@ function createBoardContent(soundsData){
     }
 }
 
-function addLoading(){    
-    let ploading=document.createElement("p")
-    let textLoading=document.createTextNode("Cargando...")
-    ploading.appendChild(textLoading)
-    ploading.classList.
-    divloading.appendChild("Carcan")
-    mainDiv.createElement("p")
-    mainDiv.appendChild("Cargando...")
-}
-
 function createButton(soundInfo){
     let divElement=document.createElement("div")
     let buttonElement=document.createElement("button")
@@ -99,12 +89,11 @@ function createButton(soundInfo){
 function EventButton(event,soundsData){
     isAudioPlaying()
 
-        let soundsFilter=soundsData.filter(sound=>sound.id==event.target.id)
-        if(soundsFilter.length > 0){
-
-            let soundPath=`${soundsFilter[0].soundPath}`
-            playSound(soundPath)
-        }
+    let soundsFilter=soundsData.filter(sound=>sound.id==event.target.id)
+    if(soundsFilter.length > 0){
+        let soundPath=`${soundsFilter[0].soundPath}`
+        playSound(soundPath)
+    }
 }
 
 function isAudioPlaying(){
