@@ -1,7 +1,7 @@
 module.exports = {
-	globDirectory: 'sounds/',
+	globDirectory: '.',
 	globPatterns: [
-		'**/*.{mp3,html,png,css,js,svg,gif}'
+		'**/*.{html,svg,gif,png,js,json,mp3,css}'
 	],
 	swDest: 'sw/servicew.js',
 	ignoreURLParametersMatching: [

@@ -20,7 +20,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="img/logcr.png">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="manifest" href="manifest.js">
+    <link rel="manifest" href="manifest.json">
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("sw/servicew.js");
+        }
+      </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;700&display=swap" rel="stylesheet">
@@ -49,11 +54,6 @@
             </div>        
         </div>
     </main>
-    <script type="text/javascript">
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("sw/servicew.js");
-        }
-      </script>
     <script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>

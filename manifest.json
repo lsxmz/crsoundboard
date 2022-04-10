@@ -9,7 +9,7 @@
     "start_url": "./",
     "icons": [
         {
-            "src": "./img/logcr.png",
+            "src": "./img/logopp.png",
             "type": "image/png",
             "sizes": "512x512"
         }
